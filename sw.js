@@ -1,24 +1,28 @@
-const CACHE_NAME = "godot-pwa-v1";
-const OFFLINE_URL = "index.offline.html";
+const CACHE_NAME = "pwa-cache-v1";
+const FILES_TO_CACHE = [
+  "index.html",
+  "manifest.json",
+  "sw.js",
+  "index.png",
+  "index.png",
+  "index.wasm",
+  "index.pck",
+  "index.js",
+  "index.offline.html",
+];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll([
-        "index.html",
-        "index.offline.html",
-        "manifest.json",
-        "index.wasm",
-        "index.pck",
-        "index.png",
-        "index.png"
-      ]);
+      return cache.addAll(FILES_TO_CACHE);
     })
   );
 });
 
 self.addEventListener("fetch", (event) => {
   event.respondWith(
-    fetch(event.request).catch(() => caches.match(event.request) || caches.match(OFFLINE_URL))
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request);
+    })
   );
 });
