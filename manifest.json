@@ -1,7 +1,8 @@
 {
-  "name": "MIS Time Tracker",
-  "short_name": "MISTimeTrack",
-  "start_url": "index.html",
+  "name": "Time Tracker",
+  "short_name": "MISTimeTracking",
+  "description": "MIS",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
