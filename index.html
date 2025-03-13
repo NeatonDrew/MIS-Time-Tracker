@@ -3,7 +3,16 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
-		<title>MIS Time Tracker</title>
+		<title>app</title>
+		<link rel="manifest" href="manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js').then(() => {
+      console.log("Service Worker Registered");
+    });
+  }
+</script>
+
 		<style>
 html, body, #canvas {
 	margin: 0;
