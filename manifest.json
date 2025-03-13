@@ -2,7 +2,7 @@
   "name": "Time Tracker",
   "short_name": "MISTimeTracking",
   "description": "MIS",
-  "start_url": "/index.html",
+  "start_url": "/MIS-Time-Tracker/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#000000",
