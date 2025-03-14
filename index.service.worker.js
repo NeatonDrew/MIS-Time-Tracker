@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1741881470|13538859809';
+const CACHE_VERSION = '1741983850|14462136886';
 /** @type {string} */
 const CACHE_PREFIX = 'MIS Time Tracker-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
