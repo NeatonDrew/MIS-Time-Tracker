@@ -5,6 +5,11 @@ const FILES_TO_CACHE = [
   "/sw.js",
   "/assets/icon-192.png",
   "/assets/icon-512.png",
+  "/index.offline.html",
+  "index.manifest.json",
+  "index.pck",
+  "index.wasm",
+  "index.js",
 ];
 
 self.addEventListener("install", (event) => {
