@@ -10,6 +10,7 @@ const FILES_TO_CACHE = [
   "index.pck",
   "index.js",
   "index.offline.html",
+  "index.icon.png",
 ];
 
 self.addEventListener("install", (event) => {
