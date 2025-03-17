@@ -11,6 +11,11 @@ const FILES_TO_CACHE = [
   "index.js",
   "index.offline.html",
   "index.icon.png",
+  "index.144x144.png.import",
+  "index.180x180.png",
+  "index.180x180.png.import",
+  "index.512x512.png",
+  "index.512x512.png.import",
 ];
 
 self.addEventListener("install", (event) => {
